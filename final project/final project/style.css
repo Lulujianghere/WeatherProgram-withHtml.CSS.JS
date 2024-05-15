@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Lucida Handwriting";
+}
+
+/* ################################# Navigation Bar ################################# */
+
+header {
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: relative;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); 
+  padding: 10px;
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+  color: #333; 
+  padding: 5px 10px;
+  margin-bottom: 10px; 
+}
+
+.navigation a:hover {
+  background-color: #CDCCBD;
+  ; 
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* ################################# SECTION City ################################# */
+
+.city {
+  text-align: center;
+  padding: 20px;
+  background-color: #CDCCBD;
+  margin-top: -5px;
+}
+.city_title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.city_boxes {
+  display: flex;
+  justify-content: space-around;
+}
+.city_box {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+}
+.city_image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.city_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.city_image:hover img {
+  transform: translateY(-5px);
+}
+
+.city_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* ################################# SECTION Weather ################################# */
+
+.weather {
+  text-align: center;
+  padding: 20px;
+  background-color: #BCD8C1;
+}
+.check_weather {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.image_container {flex: 0 0 40%; margin: 20px;}
+.image_container img {width: 90%; height: auto;}
+
+.other_container {flex: 0 0 60%; justify-content: center;}
+
+.input-container {
+  flex: 70%;
+  padding: 20px;
+  margin: 0;
+}
+.input-container img {
+  width: 80%;
+  border-radius: 10%;
+}
+.intro_text {
+  flex: 30%;
+}
+.intro_text p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #698B69;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #266030;
+}
+
+#weatherInfo {
+  text-align: center;
+  padding: 20px;
+  background-color: #CDCCBD;
+  border-radius: 4px;
+}
+
+/* ################################# SECTION Contact ################################# */
+.contact {
+  background-color: #698B69;
+  height: 300px;
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+  padding-left: 15px;
+}
+input {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input [type="submit"] {
+  font-size: 24px;
+  padding: 5px;
+}
+
+/* ################################# Media query ################################# */
+@media (min-width: 880px) {
+  .home {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .city_title {
+    text-align: left;
+  }
+  .check_weather {
+    text-align: left;
+  }
+}

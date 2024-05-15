@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather in Germany</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="home" id="home">
+        <div class="content">
+          <h1 class="text">
+            Curious about the weather in your area?
+          </h1>
+          <img src="./beach_pic.png" alt="beach" class="background-image" />
+          <div class="navigation">
+            <a href="#city">City</a>
+            <a href="#weather">Weather</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="city" id="city">
+      <br />
+      <h1 class="city_title">Explore German Cities</h1>
+      <hr />
+
+      <div class="city_boxes">
+        <div class="city_box">
+          <div class="city_image">
+            <img src="./Munich.jpeg" alt="Munich" />
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Munich" class="city_name"
+            >Munich</a
+          >
+        </div>
+
+        <div class="city_box">
+          <div class="city_image">
+            <img src="./Berlin.jpeg" alt="Berlin" />
+          </div>
+          <a href="https://de.wikipedia.org/wiki/Berlin" class="city_name"
+            >Berlin</a
+          >
+        </div>
+
+        <div class="city_box">
+          <div class="city_image">
+            <img src="./Frankfurt.jpeg" alt="Frankfurt" />
+          </div>
+          <a
+            href="https://de.wikipedia.org/wiki/Frankfurt_am_Main"
+            class="city_name"
+            >Frankfurt</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="weather" id="weather">
+      <br />
+      <h1 class="check_weather">Weather Forecast</h1>
+      <hr />
+      <div class="container">
+        <div class="image_container">
+          <img src="./postcode.png" alt="postcode" />
+        </div>
+        <div class="other_container">
+          <div class="intro_text">
+            <p>
+              Experience the latest weather forecast tailored to your location!
+              <br />
+              Just enter your <strong>postcode</strong> to unveil the current weather conditions.
+              Give it a try now!
+            </p>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              id="postcode"
+              placeholder="Enter German Postcode"
+            />
+            <button id="getWeatherBtn">Get Weather</button>
+            <div id="weatherInfo"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>Contact Us</h1>
+      <br />
+      <form action="" method="get">
+        <label for="name">Your name:</label><br />
+        <input type="text" name="name" id="name" /><br />
+        <label for="email">Your email:</label><br />
+        <input type="email" name="email" id="email" /><br />
+        <input
+          type="submit"
+          onclick="alert('Message sent')"
+          class="submit"
+          value="Submit"
+        />
+        <!-- <input type="button" onclick="alert('Message sent')" class="submit" value="Submit"> -->
+      </form>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
